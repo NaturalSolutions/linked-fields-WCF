@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TRACK_DEVModelStoreContainer" CdmEntityContainer="TRACK_DEVEntities1">
+    <EntitySetMapping Name="TChampLie">
+      <EntityTypeMapping TypeName="TRACK_DEVModel.TChampLie">
+        <MappingFragment StoreEntitySet="TChampLie">
+          <ScalarProperty Name="TCLie_PK_ID" ColumnName="TCLie_PK_ID" />
+          <ScalarProperty Name="TCLie_Valeur" ColumnName="TCLie_Valeur" />
+          <ScalarProperty Name="TCLie_Ordre" ColumnName="TCLie_Ordre" />
+          <ScalarProperty Name="TCLie_ChampTInd" ColumnName="TCLie_ChampTInd" />
+          <ScalarProperty Name="TClie_LabelFr" ColumnName="TClie_LabelFr" />
+          <ScalarProperty Name="TClie_LabelEn" ColumnName="TClie_LabelEn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

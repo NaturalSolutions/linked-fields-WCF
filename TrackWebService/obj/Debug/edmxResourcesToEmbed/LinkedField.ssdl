@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TRACK_DEVModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="TRACK_DEVModelStoreContainer">
+    <EntitySet Name="TChampLie" EntityType="TRACK_DEVModel.Store.TChampLie" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="TChampLie">
+    <Key>
+      <PropertyRef Name="TCLie_PK_ID" />
+    </Key>
+    <Property Name="TCLie_PK_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TCLie_Valeur" Type="varchar" MaxLength="50" />
+    <Property Name="TCLie_Ordre" Type="int" Nullable="false" />
+    <Property Name="TCLie_ChampTInd" Type="varchar" MaxLength="50" />
+    <Property Name="TCLie_FK_TTyp_ID" Type="int" />
+    <Property Name="TClie_LabelFr" Type="varchar" MaxLength="50" />
+    <Property Name="TClie_LabelEn" Type="varchar" MaxLength="50" />
+  </EntityType>
+</Schema>

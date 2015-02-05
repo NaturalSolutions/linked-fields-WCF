@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="TRACK_DEVModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TRACK_DEVModelStoreContainer">
+          <EntitySet Name="TChampLie" EntityType="TRACK_DEVModel.Store.TChampLie" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="TChampLie">
+          <Key>
+            <PropertyRef Name="TCLie_PK_ID" />
+          </Key>
+          <Property Name="TCLie_PK_ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TCLie_Valeur" Type="varchar" MaxLength="50" />
+          <Property Name="TCLie_Ordre" Type="int" Nullable="false" />
+          <Property Name="TCLie_ChampTInd" Type="varchar" MaxLength="50" />
+          <Property Name="TCLie_FK_TTyp_ID" Type="int" />
+          <Property Name="TClie_LabelFr" Type="varchar" MaxLength="50" />
+          <Property Name="TClie_LabelEn" Type="varchar" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TRACK_DEVModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TRACK_DEVEntities1" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="TChampLie" EntityType="TRACK_DEVModel.TChampLie" />
+        </EntityContainer>
+        <EntityType Name="TChampLie">
+          <Key>
+            <PropertyRef Name="TCLie_PK_ID" />
+          </Key>
+          <Property Name="TCLie_PK_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="TCLie_Valeur" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TCLie_Ordre" Type="Int32" Nullable="false" />
+          <Property Name="TCLie_ChampTInd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TClie_LabelFr" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="TClie_LabelEn" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TRACK_DEVModelStoreContainer" CdmEntityContainer="TRACK_DEVEntities1">
+          <EntitySetMapping Name="TChampLie">
+            <EntityTypeMapping TypeName="TRACK_DEVModel.TChampLie">
+              <MappingFragment StoreEntitySet="TChampLie">
+                <ScalarProperty Name="TCLie_PK_ID" ColumnName="TCLie_PK_ID" />
+                <ScalarProperty Name="TCLie_Valeur" ColumnName="TCLie_Valeur" />
+                <ScalarProperty Name="TCLie_Ordre" ColumnName="TCLie_Ordre" />
+                <ScalarProperty Name="TCLie_ChampTInd" ColumnName="TCLie_ChampTInd" />
+                <ScalarProperty Name="TClie_LabelFr" ColumnName="TClie_LabelFr" />
+                <ScalarProperty Name="TClie_LabelEn" ColumnName="TClie_LabelEn" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

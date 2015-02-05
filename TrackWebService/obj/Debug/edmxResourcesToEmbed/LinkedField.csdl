@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TRACK_DEVModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="TRACK_DEVEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="TChampLie" EntityType="TRACK_DEVModel.TChampLie" />
+  </EntityContainer>
+  <EntityType Name="TChampLie">
+    <Key>
+      <PropertyRef Name="TCLie_PK_ID" />
+    </Key>
+    <Property Name="TCLie_PK_ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="TCLie_Valeur" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TCLie_Ordre" Type="Int32" Nullable="false" />
+    <Property Name="TCLie_ChampTInd" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TClie_LabelFr" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="TClie_LabelEn" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>
