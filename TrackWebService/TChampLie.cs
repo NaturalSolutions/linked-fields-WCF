@@ -11,27 +11,14 @@ namespace TrackWebService
 {
     using System;
     using System.Collections.Generic;
-    using System.Runtime.Serialization;
-
-    [DataContract]
+    
     public partial class TChampLie
     {
-        [DataMember(Name = "id")]
         public int TCLie_PK_ID { get; set; }
-
-        [DataMember(Name = "value")]
         public string TCLie_Valeur { get; set; }
-
-        [DataMember(Name = "order")]
         public int TCLie_Ordre { get; set; }
-
-        [DataMember(Name = "linkedField")]
         public string TCLie_ChampTInd { get; set; }
-
-        [DataMember(Name = "labelFr")]
         public string TClie_LabelFr { get; set; }
-
-        [DataMember(Name = "labelEn")]
         public string TClie_LabelEn { get; set; }
     }
 }

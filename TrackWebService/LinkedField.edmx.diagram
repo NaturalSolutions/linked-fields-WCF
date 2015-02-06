@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="d9425a460d7c4825a7a95cd11fec88df" Name="Diagramme1">
-        <EntityTypeShape EntityType="TRACK_DEVModel.TChampLie" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TRACK_DEVModel.TChampLie" Width="2.125" PointX="1.25" PointY="1" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

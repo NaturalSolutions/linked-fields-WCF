@@ -87,6 +87,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LinkedField.edmx</DependentUpon>
     </Compile>
+    <Compile Include="linkedFieldsInformation.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>

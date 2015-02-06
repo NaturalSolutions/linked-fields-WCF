@@ -21,7 +21,7 @@ namespace TrackWebService
         /// <returns>all linked fields</returns>
         [OperationContract]
         [WebGet(UriTemplate = "linkedFields", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.WrappedRequest)]
-        List<TChampLie> GetAllLinkedFields();
+        linkedFieldsInformation GetAllLinkedFields();
 
     }
 }
