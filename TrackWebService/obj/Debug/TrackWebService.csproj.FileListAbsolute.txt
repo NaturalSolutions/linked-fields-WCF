@@ -5,3 +5,4 @@ C:\Users\Corleone\documents\visual studio 2012\Projects\TrackWebService\TrackWeb
 C:\Users\Corleone\documents\visual studio 2012\Projects\TrackWebService\TrackWebService\bin\fr\EntityFramework.resources.dll
 C:\Users\Corleone\documents\visual studio 2012\Projects\TrackWebService\TrackWebService\obj\Debug\TrackWebService.dll
 C:\Users\Corleone\documents\visual studio 2012\Projects\TrackWebService\TrackWebService\obj\Debug\TrackWebService.pdb
+C:\Users\Corleone\documents\visual studio 2012\Projects\TrackWebService\TrackWebService\obj\Debug\TrackWebService.csprojResolveAssemblyReference.cache

@@ -22,7 +22,7 @@ namespace TrackWebService
         {
             using(TRACK_DEVEntities1 context = new TRACK_DEVEntities1())
             {
-                List<TChampLie> lstChampsLies = (from table in context.TChampLie select table).ToList();
+                List<TChampLie> lstChampsLies = (from table in context.TChampLie where table.TCLie_Valeur != null select table).ToList();
                 return lstChampsLies;
             }
             
