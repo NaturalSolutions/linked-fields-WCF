@@ -31,7 +31,7 @@ namespace TrackWebService
         [DataMember(Name = "labelFr")]
         public string TClie_LabelFr { get; set; }
 
-        [DataMember(Name = "labelEr")]
+        [DataMember(Name = "labelEn")]
         public string TClie_LabelEn { get; set; }
     }
 }
